@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/loginTeachers.css">
+	<title>Login For Teachers</title>
+	
+</head>
+<div class = "btn-group" style="width: 100%">
+<button class="but1" style="width: 50%; margin-top: -27px;" ><a href="/login">Student</a></button>
+<button class="but2"  style="width: 50%; margin-top: -27px;" ><a href="/loginTeachers">Teacher</a></button>
+<button class="but5"><a href="/register">Register here</a></button>
+</div>
+
+<body>
+	
+		
+		
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form ngNativeValidate>
+				<h1>Login</h1>
+				
+				<input type="text"  placeholder="Username" name="username" [(ngModel)]="username" required/>
+				<input type="password" placeholder="Password" name="password" [(ngModel)]="password" required />
+				<button class="but3"type="submit">Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>Nagarro Academy</h1>
+					<p>Login For Teachers</p>
+				</div>
+			</div>
+           
+		</div>
+	</div>
+    
+    <script src="./js/loginTeachers.js"> </script>
+	
+</body>
+</html>
